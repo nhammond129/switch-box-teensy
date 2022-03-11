@@ -4,6 +4,8 @@ Using a teensy LC and 4x HC165s
 emulating a gamepad device
 
 * Custom shiftIn function (`inShift32`) used since arduino-provided one seems to drop the first bit (clocking difference issue i think)
+
+
 Rough schematic
 ----
 
