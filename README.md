@@ -8,6 +8,11 @@ Arduinos are cheaper[^1] but I didn't want to fiddle with [V-USB](https://www.ob
 * Custom shiftIn function (`inShift32`) used since arduino-provided one seems to drop the first bit (clocking difference issue i think)
 
 
+Actual Use Case
+----
+Tie momentary switches in and use it like a streamdeck. I used the [Joystick](https://www.pjrc.com/teensy/td_joystick.html) module but [Keyboard](https://www.pjrc.com/teensy/td_keyboard.html) is also an option.
+
+
 Rough schematic
 ----
 
@@ -15,7 +20,7 @@ D0..D7 for each HC165 is tied to a switch input. 3.3v for logical high and pulli
 
 ![image](https://user-images.githubusercontent.com/2228057/157795084-ae7e29f5-5b62-4bdb-a68c-dcb28353325c.png)
 
-Using
+Programming
 ----
 
 Use `USB Type: "Keyboard + Mouse + Joystick"`
